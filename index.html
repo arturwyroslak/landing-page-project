@@ -1,220 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elite Autonomous Agent - Modern Landing Page</title>
+    <title>Modern Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <div class="logo">AGENT.AI</div>
-            <ul class="nav-links">
-                <li><a href="#features"><i class="fas fa-star"></i> Features</a></li>
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-                <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
-                <li><a href="#pricing"><i class="fas fa-tag"></i> Pricing</a></li>
-                <li><a href="#contact" class="cta-button"><i class="fas fa-rocket"></i> Get Started</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">Brand<span>Logo</span></div>
+            <nav class="nav">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
-    <main>
-        <!-- Hero Section with 3D Effect -->
-        <section class="hero">
+    <section id="hero" class="hero">
+        <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">ELITE PERFORMANCE AUTONOMOUS AGENT</h1>
-                <p class="hero-subtitle">The next generation of software engineering. Fully autonomous, high-integrity, and specialized in GitHub workflows.</p>
+                <h1 class="hero-title">Transform Your Digital Experience</h1>
+                <p class="hero-subtitle">Innovative solutions for modern businesses</p>
                 <div class="hero-buttons">
-                    <a href="#get-started" class="btn primary">Deploy Now</a>
-                    <a href="#documentation" class="btn secondary">Documentation</a>
+                    <button class="btn btn-primary">Get Started</button>
+                    <button class="btn btn-secondary">Learn More</button>
                 </div>
             </div>
-            <div class="hero-3d-container">
-                <div class="floating-cube">
-                    <div class="cube-face front">AUTONOMOUS</div>
-                    <div class="cube-face back">REAL-TIME</div>
-                    <div class="cube-face right">SECURE</div>
-                    <div class="cube-face left">EFFICIENT</div>
-                    <div class="cube-face top">INTELLIGENT</div>
-                    <div class="cube-face bottom">SCALABLE</div>
-                </div>
+            <div class="hero-image">
+                <div class="floating-shape"></div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Features Section -->
-        <section id="features" class="features">
+    <section id="features" class="features">
+        <div class="container">
             <div class="section-header">
-                <h2>Core Capabilities</h2>
-                <p>Advanced features designed for modern development</p>
+                <h2 class="section-title">Our Features</h2>
+                <p class="section-subtitle">Discover the powerful capabilities</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card animate-on-scroll">
+                <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-bolt"></i>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L22 9L13 14L13.09 22L12 17.74L3 18.5L12 14L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h3>Autonomous</h3>
-                    <p>Proceeds from plan to execution without idling.</p>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">Optimized performance for seamless user experience</p>
                 </div>
-                <div class="feature-card animate-on-scroll">
+                <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 3V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15L15 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15L9 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h3>Real-time</h3>
-                    <p>Instant updates and feedback via event streaming.</p>
+                    <h3 class="feature-title">Intuitive Design</h3>
+                    <p class="feature-description">User-friendly interface designed for everyone</p>
                 </div>
-                <div class="feature-card animate-on-scroll">
+                <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                    <h3>Secure</h3>
-                    <p>Enterprise-grade security scanning and compliance.</p>
-                </div>
-                <div class="feature-card animate-on-scroll">
-                    <div class="feature-icon">
-                        <i class="fas fa-sync-alt"></i>
-                    </div>
-                    <h3>Adaptive</h3>
-                    <p>Intelligent learning and optimization capabilities.</p>
+                    <h3 class="feature-title">Secure Platform</h3>
+                    <p class="feature-description">Enterprise-grade security for your peace of mind</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
+    <section id="about" class="about">
+        <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>About Our Platform</h2>
-                    <p>Our autonomous agent represents the cutting edge of software development automation. Built for developers who demand excellence and efficiency.</p>
-                    <p>With advanced AI algorithms and machine learning capabilities, our platform delivers unprecedented performance and reliability.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">Uptime</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">10x</div>
-                        <div class="stat-label">Faster Development</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials">
-            <div class="section-header">
-                <h2>What Our Clients Say</h2>
-                <p>Trusted by industry leaders worldwide</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"This platform has revolutionized how we approach software development. The automation capabilities are unmatched."</p>
-                    <div class="author">
-                        <strong>John Smith</strong> - CTO, TechCorp
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Implementation was seamless and the results exceeded our expectations. Highly recommended for any development team."</p>
-                    <div class="author">
-                        <strong>Sarah Johnson</strong> - Lead Developer, Innovate Inc
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <p>"The intelligent automation has saved us countless hours. It's become an indispensable part of our workflow."</p>
-                    <div class="author">
-                        <strong>Michael Chen</strong> - Engineering Director, FutureTech
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="pricing">
-            <div class="section-header">
-                <h2>Simple, Transparent Pricing</h2>
-                <p>Choose the plan that fits your needs</p>
-            </div>
-            <div class="pricing-cards">
-                <div class="pricing-card">
-                    <h3>Starter</h3>
-                    <div class="price">$29<span>/month</span></div>
-                    <ul>
-                        <li>Basic automation</li>
-                        <li>5 projects</li>
-                        <li>Email support</li>
-                        <li>Standard analytics</li>
+                    <h2 class="section-title">About Our Platform</h2>
+                    <p class="about-description">We're revolutionizing digital experiences with cutting-edge technology and innovative solutions. Our platform combines the latest advancements in web development with intuitive design principles to deliver exceptional user experiences.</p>
+                    <ul class="about-list">
+                        <li>✓ Modern architecture</li>
+                        <li>✓ Scalable solutions</li>
+                        <li>✓ 24/7 support</li>
+                        <li>✓ Continuous innovation</li>
                     </ul>
+                    <button class="btn btn-primary">Learn More</button>
                 </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <h3>Professional</h3>
-                    <div class="price">$79<span>/month</span></div>
-                    <ul>
-                        <li>Advanced automation</li>
-                        <li>Unlimited projects</li>
-                        <li>Priority support</li>
-                        <li>Advanced analytics</li>
-                        <li>Custom integrations</li>
-                    </ul>
-                </div>
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <div class="price">$199<span>/month</span></div>
-                    <ul>
-                        <li>All Professional features</li>
-                        <li>Dedicated account manager</li>
-                        <li>24/7 dedicated support</li>
-                        <li>Custom solutions</li>
-                        <li>SLA guarantee</li>
-                    </ul>
+                <div class="about-image">
+                    <div class="image-placeholder"></div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
+    <section id="contact" class="contact">
+        <div class="container">
             <div class="section-header">
-                <h2>Get In Touch</h2>
-                <p>Have questions? We'd love to hear from you</p>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have questions? We'd love to hear from you.</p>
             </div>
             <div class="contact-form">
                 <form id="contactForm">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h3>AGENT.AI</h3>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Brand<span>Logo</span></div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><span>FB</span></a>
+                    <a href="#"><span>TW</span></a>
+                    <a href="#"><span>IG</span></a>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BrandLogo. All rights reserved.</p>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 AGENT.AI - ELITE OPERATIONS</p>
         </div>
     </footer>
 
